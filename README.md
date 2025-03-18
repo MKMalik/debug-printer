@@ -24,12 +24,12 @@ require("lazy").setup({
 ```
 #### **Using packpath**
 ```sh
-git clone https://github.com/yourusername/debug-printer ~/.config/nvim/pack/plugins/start/debug-printer
+git clone https://github.com/MKMalik/debug_printer ~/.config/nvim/pack/plugins/start/debug_printer
 ```
 
 ### **🚀 Usage**
-- **Normal Mode**: Place cursor on a variable → Press `<leader>p`  
-- **Visual Mode**: Select text → Press `<leader>p`  
+- **Normal Mode**: Place cursor on a variable → Press `<leader>pp`  
+- **Visual Mode**: Select text → Press `<leader>pp`  
 - Print statement is **inserted in the next line automatically**!  
 
 ### **⚙️ Customization**

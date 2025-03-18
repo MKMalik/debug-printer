@@ -11,12 +11,12 @@ M.config = {
     python = 'print("%s:", %s)',
     cpp = 'std::cout << "%s: " << %s << std::endl;',
     c = 'printf("%s: %d\\n", %s);',
-    lua = 'print("%s: " .. %s)', -- Fixed Lua string
+    lua = 'print("%s: " .. %s)',
     php = 'echo "%s: " . %s . "\\n";',
     ruby = 'puts "#{%s}: #{%s}"',
     swift = 'print("\\("%s: \\(%s)\\")")',
     kotlin = 'println("%s: $%s")',
-    dart = 'print("%s: \\$%s");', -- Escaped $ for Dart
+    dart = 'print("%s: \\$%s");',
     go = 'fmt.Printf("%s: %v\\n", %s)',
     rust = 'println!("{}: {:?}", "%s", %s);',
     csharp = 'Console.WriteLine("{0}: {1}", "%s", %s);',
@@ -30,7 +30,7 @@ M.config = {
     fsharp = 'printfn "%s: %A" "%s" %s',
     objectivec = 'NSLog(@"%s: %@", @"%s", %s);',
     vb = 'Console.WriteLine("{0}: {1}", "%s", %s)',
-    zig = 'std.debug.print("%s: {}\\n", .{%s});' -- Fixed Zig escaping
+    zig = 'std.debug.print("%s: {}\\n", .{%s});'
   }
 
 }

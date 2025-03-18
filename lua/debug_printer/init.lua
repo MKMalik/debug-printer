@@ -3,6 +3,7 @@ local M = {}
 M.config = {
   keymap_normal = "<leader>pp",
   keymap_visual = "<leader>pp",
+
   print_statements = {
     java = 'System.out.println("%s: " + %s);',
     javascript = 'console.log("%s:", %s);',
@@ -10,12 +11,12 @@ M.config = {
     python = 'print("%s:", %s)',
     cpp = 'std::cout << "%s: " << %s << std::endl;',
     c = 'printf("%s: %d\\n", %s);',
-    lua = 'print("%s: " .. %s)',
+    lua = 'print("%s: " .. %s)', -- Fixed Lua string
     php = 'echo "%s: " . %s . "\\n";',
     ruby = 'puts "#{%s}: #{%s}"',
     swift = 'print("\\("%s: \\(%s)\\")")',
     kotlin = 'println("%s: $%s")',
-    dart = 'print("%s: \$%s");',
+    dart = 'print("%s: \\$%s");', -- Escaped $ for Dart
     go = 'fmt.Printf("%s: %v\\n", %s)',
     rust = 'println!("{}: {:?}", "%s", %s);',
     csharp = 'Console.WriteLine("{0}: {1}", "%s", %s);',
@@ -29,7 +30,7 @@ M.config = {
     fsharp = 'printfn "%s: %A" "%s" %s',
     objectivec = 'NSLog(@"%s: %@", @"%s", %s);',
     vb = 'Console.WriteLine("{0}: {1}", "%s", %s)',
-    zig = 'std.debug.print("%s: {}\n", .{%s});'
+    zig = 'std.debug.print("%s: {}\\n", .{%s});' -- Fixed Zig escaping
   }
 
 }

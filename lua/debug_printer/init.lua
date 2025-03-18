@@ -21,9 +21,9 @@ function M.setup(user_config)
   end
 
   -- Bind keys using the correct module name
-  vim.api.nvim_set_keymap("n", M.config.keymap_normal, ":lua require'debug-printer'.PrintDebug()<CR>",
+  vim.api.nvim_set_keymap("n", M.config.keymap_normal, ":lua require'debug_printer'.PrintDebug()<CR>",
     { noremap = true, silent = true })
-  vim.api.nvim_set_keymap("v", M.config.keymap_visual, ":lua require'debug-printer'.PrintDebug()<CR>",
+  vim.api.nvim_set_keymap("v", M.config.keymap_visual, ":lua require'debug_printer'.PrintDebug()<CR>",
     { noremap = true, silent = true })
 end
 

@@ -19,7 +19,7 @@
 #### **Using Lazy.nvim**  
 ```lua
 require("lazy").setup({
-  { dir = "~/path/to/debug-printer" }
+  {     "MKMalik/debug_printer",   }
 })
 ```
 #### **Using packpath**

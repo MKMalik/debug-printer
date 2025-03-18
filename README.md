@@ -5,7 +5,7 @@
 ### **✨ Features**  
 - 🖱️ **Works in Normal & Visual Mode** – Select words, expressions, or blocks effortlessly.  
 - 🔄 **Auto-Detects File Type** – Inserts the correct print statement for Java, Python, JavaScript, C++, and more.  
-- ⚡ **Seamless Key Mapping** – Default: `<leader>p` (configurable).  
+- ⚡ **Seamless Key Mapping** – Default: `<leader>pp` (configurable).  
 - 🔧 **Customizable** – Override print formats and key bindings easily.  
 
 ### **📌 Supported Languages**
